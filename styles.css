@@ -30,6 +30,8 @@ body {
 
 .home-header {
   text-align: center;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .home-header h1 {
