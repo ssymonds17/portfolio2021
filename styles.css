@@ -41,10 +41,35 @@ body {
 .home-header h3 {
   font-family: Recursive, sans-serif;
   font-size: 2.5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 1rem;
 }
 
 .profile {
   height: 20rem;
   border-radius: 50%;
   border: 2px solid white;
+}
+
+.about {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 4vw;
+  font-family: Recursive, sans-serif;
+}
+
+.about strong {
+  color: goldenrod;
+}
+
+.about a {
+  text-decoration: none;
+  color: white;
+}
+.about a:hover {
+  color: goldenrod;
+  transition: 0.5s;
 }
