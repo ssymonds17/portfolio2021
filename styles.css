@@ -1,0 +1,14 @@
+body {
+  margin: 0 auto;
+  background-color: #111;
+  color: white;
+}
+
+.home-header {
+  text-align: center;
+}
+
+.profile {
+  height: 20rem;
+  border-radius: 50%;
+}
