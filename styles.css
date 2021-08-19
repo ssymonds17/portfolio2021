@@ -1,11 +1,43 @@
+@font-face {
+  font-family: JuliusSansOne;
+  src: url('fonts/JuliusSansOne-Regular.ttf');
+}
+@font-face {
+  font-family: Recursive;
+  src: url('fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf');
+}
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-Italic.ttf');
+  font-style: italic;
+}
+
 body {
   margin: 0 auto;
   background-color: #111;
   color: white;
+  font-family: OpenSans, sans-serif;
 }
 
 .home-header {
   text-align: center;
+}
+
+.home-header h1 {
+  font-family: JuliusSansOne, sans-serif;
+}
+
+.home-header h3 {
+  font-family: Recursive, sans-serif;
 }
 
 .profile {
