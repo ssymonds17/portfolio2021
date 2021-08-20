@@ -143,11 +143,13 @@ nav + #home {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 .nav-links {
+  transform: translateX(50vw);
+  opacity: 0;
   transition: all 0.5s ease;
 }
 .nav-links.show {
-  transform: translateX(50vw);
-  opacity: 0;
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /* HOME PAGE */
