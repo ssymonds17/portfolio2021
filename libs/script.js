@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $('#home').show();
-  $('#skills').hide();
+  $('#home').hide();
+  $('#skills').show();
   $('#project').hide();
   $('#contact').hide();
 });

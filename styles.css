@@ -30,7 +30,6 @@ body {
 }
 
 /* NAV  */
-
 nav {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -41,25 +40,21 @@ nav {
   height: 5rem;
   z-index: 10;
   background-color: #111;
-  padding: 0 1rem;
+  padding: 1rem;
 }
-
 .logo-container {
   display: flex;
   grid-area: logo;
   align-items: center;
   padding-left: 1rem;
 }
-
 .fa-code {
   height: 3rem !important;
   width: 3rem !important;
 }
-
 .nav-items-container {
   grid-area: links;
 }
-
 .nav-items-container ul {
   display: flex;
   justify-content: space-around;
@@ -69,24 +64,25 @@ nav {
 }
 
 .nav-items-container li {
+  font-family: Recursive;
   font-size: 1.3rem;
 }
 .nav-items-container li:hover,
 .fa-code:hover {
-  color: goldenrod;
+  color: #b3a577;
   cursor: pointer;
   transition: 0.5s ease;
 }
 .menu-btn:hover .menu-btn-burger,
 .menu-btn:hover .menu-btn-burger::after,
 .menu-btn:hover .menu-btn-burger::before {
-  background-color: goldenrod;
+  background-color: #b3a577;
   cursor: pointer;
   transition: 0.5s ease;
 }
 
 .link-active {
-  color: goldenrod;
+  color: #b3a577;
   text-decoration: underline;
 }
 
@@ -94,7 +90,7 @@ nav {
 #skills,
 #projects,
 #contact {
-  padding-top: 4rem;
+  padding-top: 4.5rem;
 }
 
 /* HAMBURGER MENU */
@@ -193,7 +189,7 @@ nav {
 }
 
 .about strong {
-  color: goldenrod;
+  color: #b3a577;
 }
 
 .about a {
@@ -201,6 +197,83 @@ nav {
   color: white;
 }
 .about a:hover {
-  color: goldenrod;
+  color: #b3a577;
   transition: 0.5s;
+}
+
+/* SKILLS PAGE */
+
+#skills {
+  width: 90vw;
+  margin: 0 auto;
+}
+.skills-header {
+  text-align: center;
+}
+.skills-header h1 {
+  font-family: JuliusSansOne, sans-serif;
+  font-size: 7vw;
+  margin-bottom: 0;
+}
+
+.skills-list h3 {
+  font-family: Recursive, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #b3a577;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#skills li {
+  text-align: center;
+}
+
+/* SKILL ICONS */
+
+.skill-icon {
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 10%;
+  padding: 0.5rem;
+}
+
+.fa-html5 {
+  color: #e34f26;
+  background-color: white;
+}
+.fa-css3-alt {
+  color: #264de4;
+  background-color: white;
+}
+.fa-js-square {
+  color: #f0db4f;
+  width: 6.7rem !important;
+  height: 6.7rem !important;
+  margin-top: -0.8rem;
+}
+.js-title {
+  margin-top: 0.5rem;
+}
+.fa-react {
+  color: #61dbfb;
+  background-color: white;
+}
+.jquery-icon {
+  color: #6379e6;
+  background-color: white;
+}
+.fa-php {
+  color: #8993be;
+  background-color: #232531;
+  border: 1px solid white;
+}
+.mongodb-icon,
+.postgres-icon,
+.mysql-icon {
+  background-color: white;
 }
