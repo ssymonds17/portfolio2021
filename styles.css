@@ -77,6 +77,13 @@ nav {
   cursor: pointer;
   transition: 0.5s ease;
 }
+.menu-btn:hover .menu-btn-burger,
+.menu-btn:hover .menu-btn-burger::after,
+.menu-btn:hover .menu-btn-burger::before {
+  background-color: goldenrod;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
 
 .link-active {
   color: goldenrod;
@@ -98,6 +105,8 @@ nav + #home {
   width: 3.5rem;
   transition: all 0.5s ease-in-out;
   margin-right: 1.5rem;
+  background-color: #111;
+  z-index: 15;
 }
 .menu-btn-burger {
   width: 40px;
@@ -132,6 +141,13 @@ nav + #home {
 }
 .menu-btn.open .menu-btn-burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+.nav-links {
+  transition: all 0.5s ease;
+}
+.nav-links.show {
+  transform: translateX(50vw);
+  opacity: 0;
 }
 
 /* HOME PAGE */
