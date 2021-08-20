@@ -94,7 +94,7 @@ nav {
 #skills,
 #projects,
 #contact {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 /* HAMBURGER MENU */
@@ -126,7 +126,7 @@ nav {
   height: 5px;
   background: #fff;
   border-radius: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger::before {
@@ -148,7 +148,7 @@ nav {
 .nav-links {
   transform: translateX(50vw);
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .nav-links.show {
   transform: translateX(0);

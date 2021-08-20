@@ -9,7 +9,7 @@ $(document).ready(function() {
 const menuBtn = $('.menu-btn');
 const navLinks = $('.nav-links');
 let menuOpen = false;
-menuBtn.on('click', () => {
+const navLinksToggle = () => {
   if (!menuOpen) {
     menuBtn.addClass('open');
     navLinks.addClass('show');
@@ -19,7 +19,8 @@ menuBtn.on('click', () => {
     navLinks.removeClass('show');
     menuOpen = false;
   }
-});
+};
+menuBtn.on('click', navLinksToggle);
 
 // SINGLE PAGE NAVIGATION
 const homeLink = $('.home-link');
@@ -28,6 +29,7 @@ const projectsLink = $('.projects-link');
 const contactLink = $('.contact-link');
 
 homeLink.on('click', () => {
+  navLinksToggle();
   homeLink.addClass('link-active');
   skillsLink.removeClass('link-active');
   projectsLink.removeClass('link-active');
@@ -38,6 +40,7 @@ homeLink.on('click', () => {
   $('#contact').hide();
 });
 skillsLink.on('click', () => {
+  navLinksToggle();
   homeLink.removeClass('link-active');
   skillsLink.addClass('link-active');
   projectsLink.removeClass('link-active');
@@ -48,6 +51,7 @@ skillsLink.on('click', () => {
   $('#contact').hide();
 });
 projectsLink.on('click', () => {
+  navLinksToggle();
   homeLink.removeClass('link-active');
   skillsLink.removeClass('link-active');
   projectsLink.addClass('link-active');
@@ -58,6 +62,7 @@ projectsLink.on('click', () => {
   $('#contact').hide();
 });
 contactLink.on('click', () => {
+  navLinksToggle();
   homeLink.removeClass('link-active');
   skillsLink.removeClass('link-active');
   projectsLink.removeClass('link-active');
