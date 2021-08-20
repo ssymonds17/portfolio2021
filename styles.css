@@ -28,8 +28,12 @@ body {
   font-family: OpenSans, sans-serif;
 }
 
+/* NAV  */
+
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: 'logo . . . . links links links links links links toggle';
   position: fixed;
   top: 0;
   width: 100%;
@@ -41,24 +45,18 @@ nav {
 
 .logo-container {
   display: flex;
-  width: 50%;
+  grid-area: logo;
   align-items: center;
+  padding-left: 1rem;
 }
 
 .fa-code {
   height: 3rem !important;
   width: 3rem !important;
 }
-.fa-code:hover {
-  height: 3rem !important;
-  width: 3rem !important;
-  cursor: pointer;
-  color: goldenrod;
-  transition: 0.5s ease;
-}
 
 .nav-items-container {
-  width: 50%;
+  grid-area: links;
 }
 
 .nav-items-container ul {
@@ -66,19 +64,37 @@ nav {
   justify-content: space-around;
   list-style: none;
   padding-left: 0;
-  padding-top: 0.85rem;
+  padding-top: 0.6rem;
 }
 
 .nav-items-container li {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
-.nav-items-container li:hover {
+.nav-items-container li:hover,
+.fa-code:hover,
+.fa-times:hover {
   color: goldenrod;
   cursor: pointer;
   transition: 0.5s ease;
 }
 
-.sticky + #home {
+.toggle {
+  display: flex;
+  grid-area: toggle;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.fa-times {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.link-active {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+nav + #home {
   padding-top: 5rem;
 }
 
