@@ -90,7 +90,10 @@ nav {
   text-decoration: underline;
 }
 
-nav + #home {
+#home,
+#skills,
+#projects,
+#contact {
   padding-top: 5rem;
 }
 
@@ -145,7 +148,7 @@ nav + #home {
 .nav-links {
   transform: translateX(50vw);
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .nav-links.show {
   transform: translateX(0);
