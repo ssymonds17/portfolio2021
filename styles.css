@@ -343,3 +343,43 @@ nav {
   color: #b3a577;
   padding-right: 1rem;
 }
+
+/* CONTACT PAGE */
+
+#contact {
+  margin: 0 auto;
+  width: 90vw;
+  text-align: center;
+}
+#contact section {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+#contact header {
+  text-align: center;
+}
+#contact h3 {
+  font-family: Recursive, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #b3a577;
+}
+#contact form {
+  width: 100%;
+}
+#contact input,
+textarea {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  font-family: OpenSans, sans-serif;
+  border: 1px solid #111;
+}
+.submit-btn {
+  width: 30% !important;
+  color: white;
+  background-color: #b3a577;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
