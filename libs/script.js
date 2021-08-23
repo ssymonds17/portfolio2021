@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('#home').hide();
-  $('#skills').show();
-  $('#project').hide();
+  $('#skills').hide();
+  $('#projects').show();
   $('#contact').hide();
 });
 

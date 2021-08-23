@@ -231,15 +231,18 @@ nav {
   color: #b3a577;
   padding-right: 1rem;
 }
-.experience a {
+.experience a,
+.project a {
   color: #b3a577;
   position: relative;
   text-decoration: none;
 }
-.experience a:hover {
+.experience a:hover,
+.project a:hover {
   cursor: pointer;
 }
-.experience a::before {
+.experience a::before,
+.project a::before {
   content: '';
   position: absolute;
   display: block;
@@ -251,7 +254,8 @@ nav {
   transform: scaleX(0);
   transition: transform 1s ease;
 }
-.experience a:hover::before {
+.experience a:hover::before,
+.project a:hover::before {
   transform: scaleX(1);
 }
 #skills ul {
@@ -313,3 +317,29 @@ nav {
 }
 
 /* PROJECTS PAGE */
+
+#projects {
+  width: 90vw;
+  margin: 0 auto 4rem auto;
+}
+#projects h3 {
+  font-family: Recursive, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #b3a577;
+  margin-bottom: 0.5rem;
+}
+.project {
+  margin-bottom: 2rem;
+}
+.project-footer {
+  display: flex;
+}
+#projects h5 {
+  font-family: Recursive, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin: 0;
+  color: #b3a577;
+  padding-right: 1rem;
+}
