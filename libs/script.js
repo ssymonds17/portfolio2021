@@ -34,7 +34,7 @@ homeLink.on('click', () => {
   skillsLink.removeClass('link-active');
   projectsLink.removeClass('link-active');
   contactLink.removeClass('link-active');
-  $('#home').show();
+  $('#home').slideDown('slow');
   $('#skills').hide();
   $('#projects').hide();
   $('#contact').hide();
@@ -46,7 +46,7 @@ skillsLink.on('click', () => {
   projectsLink.removeClass('link-active');
   contactLink.removeClass('link-active');
   $('#home').hide();
-  $('#skills').show();
+  $('#skills').slideDown('slow');
   $('#projects').hide();
   $('#contact').hide();
 });
@@ -58,7 +58,7 @@ projectsLink.on('click', () => {
   contactLink.removeClass('link-active');
   $('#home').hide();
   $('#skills').hide();
-  $('#projects').show();
+  $('#projects').slideDown('slow');
   $('#contact').hide();
 });
 contactLink.on('click', () => {
@@ -70,5 +70,5 @@ contactLink.on('click', () => {
   $('#home').hide();
   $('#skills').hide();
   $('#projects').hide();
-  $('#contact').show();
+  $('#contact').slideDown('slow');
 });
