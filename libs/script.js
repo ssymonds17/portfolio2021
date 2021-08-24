@@ -10,6 +10,8 @@ const menuBtn = $('.menu-btn');
 const navLinks = $('.nav-links');
 let menuOpen = false;
 const navLinksToggle = () => {
+  console.log(menuOpen);
+
   if (!menuOpen) {
     menuBtn.addClass('open');
     navLinks.addClass('show');
@@ -31,6 +33,19 @@ const contactLink = $('.contact-link');
 
 // SHOW FUNCTIONS FOR EACH VIEW
 const showHome = () => {
+  navLinksToggle();
+  homeLink.addClass('link-active');
+  skillsLink.removeClass('link-active');
+  projectsLink.removeClass('link-active');
+  contactLink.removeClass('link-active');
+  $('#footer').hide();
+  $('#skills').hide();
+  $('#projects').hide();
+  $('#contact').hide();
+  $('#home').slideDown('slow');
+};
+const showHomeLogo = () => {
+  menuOpen = true;
   navLinksToggle();
   homeLink.addClass('link-active');
   skillsLink.removeClass('link-active');
@@ -89,7 +104,7 @@ homeLink.on('click', () => {
   }, 1000);
 });
 logoLink.on('click', () => {
-  showHome();
+  showHomeLogo();
   setTimeout(() => {
     showFooter();
   }, 1000);
