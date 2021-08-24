@@ -261,9 +261,10 @@ nav {
 #skills ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   max-width: 100%;
-  white-space: normal;
+  padding-left: 0;
 }
 #skills li {
   /* display: inline-block; */
@@ -402,6 +403,7 @@ textarea {
 #footer ul {
   display: flex;
   list-style: none;
+  padding-left: 0;
 }
 
 #footer li,
@@ -439,4 +441,26 @@ textarea {
 #footer a:hover::before,
 #footer a:hover::before {
   transform: scaleX(1);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+  .home-header h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  nav {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 'logo . links links links links links links links links links .';
+  }
+  .menu-btn {
+    display: none;
+  }
+  .nav-links {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

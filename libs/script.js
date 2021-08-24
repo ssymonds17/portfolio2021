@@ -24,6 +24,7 @@ menuBtn.on('click', navLinksToggle);
 
 // SINGLE PAGE NAVIGATION
 const homeLink = $('.home-link');
+const logoLink = $('.logo-link');
 const skillsLink = $('.skills-link');
 const projectsLink = $('.projects-link');
 const contactLink = $('.contact-link');
@@ -82,6 +83,12 @@ const showFooter = () => {
 };
 // ON CLICK EVENT LISTENERS TO PAGE NAV
 homeLink.on('click', () => {
+  showHome();
+  setTimeout(() => {
+    showFooter();
+  }, 1000);
+});
+logoLink.on('click', () => {
   showHome();
   setTimeout(() => {
     showFooter();
