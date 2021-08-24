@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $('#home').hide();
+  $('#home').show();
   $('#skills').hide();
   $('#projects').hide();
-  $('#contact').show();
+  $('#contact').hide();
 });
 
 // TOGGLE HAMBURGER MENU AND NAV ITEMS DISPLAY

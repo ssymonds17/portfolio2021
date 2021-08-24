@@ -384,3 +384,8 @@ textarea {
   text-transform: uppercase;
   font-size: 1.1rem;
 }
+.submit-btn:hover {
+  opacity: 0.8 !important;
+  transition: ease-in 0.3s !important;
+  cursor: pointer !important;
+}
