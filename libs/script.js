@@ -28,50 +28,88 @@ const skillsLink = $('.skills-link');
 const projectsLink = $('.projects-link');
 const contactLink = $('.contact-link');
 
-homeLink.on('click', () => {
+// SHOW FUNCTIONS FOR EACH VIEW
+const showHome = () => {
   navLinksToggle();
   homeLink.addClass('link-active');
   skillsLink.removeClass('link-active');
   projectsLink.removeClass('link-active');
   contactLink.removeClass('link-active');
-  $('#home').slideDown('slow');
+  $('#footer').hide();
   $('#skills').hide();
   $('#projects').hide();
   $('#contact').hide();
-});
-skillsLink.on('click', () => {
+  $('#home').slideDown('slow');
+};
+const showSkills = () => {
   navLinksToggle();
   homeLink.removeClass('link-active');
   skillsLink.addClass('link-active');
   projectsLink.removeClass('link-active');
   contactLink.removeClass('link-active');
+  $('#footer').hide();
   $('#home').hide();
-  $('#skills').slideDown('slow');
   $('#projects').hide();
   $('#contact').hide();
-});
-projectsLink.on('click', () => {
+  $('#skills').slideDown('slow');
+};
+const showProjects = () => {
   navLinksToggle();
   homeLink.removeClass('link-active');
   skillsLink.removeClass('link-active');
   projectsLink.addClass('link-active');
   contactLink.removeClass('link-active');
+  $('#footer').hide();
   $('#home').hide();
   $('#skills').hide();
-  $('#projects').slideDown('slow');
   $('#contact').hide();
-});
-contactLink.on('click', () => {
+  $('#projects').slideDown('slow');
+};
+const showContact = () => {
   navLinksToggle();
   homeLink.removeClass('link-active');
   skillsLink.removeClass('link-active');
   projectsLink.removeClass('link-active');
   contactLink.addClass('link-active');
+  $('#footer').hide();
   $('#home').hide();
   $('#skills').hide();
   $('#projects').hide();
   $('#contact').slideDown('slow');
+};
+const showFooter = () => {
+  $('#footer').show();
+};
+// ON CLICK EVENT LISTENERS TO PAGE NAV
+homeLink.on('click', () => {
+  showHome();
+  setTimeout(() => {
+    showFooter();
+  }, 1000);
+});
+skillsLink.on('click', () => {
+  showSkills();
+  setTimeout(() => {
+    showFooter();
+  }, 1000);
+});
+projectsLink.on('click', () => {
+  showProjects();
+  setTimeout(() => {
+    showFooter();
+  }, 1000);
+});
+contactLink.on('click', () => {
+  showContact();
+  setTimeout(() => {
+    showFooter();
+  }, 1000);
 });
 
 // CONTACT FORM
 $('#contact-form').validate();
+
+// FOOTER
+const $currentYear = new Date().getFullYear();
+const $footerCopy = `<p>Samuel Symonds &copy; ${$currentYear}</p>`;
+$('#footer-copy').html($footerCopy);

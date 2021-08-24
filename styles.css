@@ -389,3 +389,54 @@ textarea {
   transition: ease-in 0.3s !important;
   cursor: pointer !important;
 }
+
+/* FOOTER */
+
+#footer {
+  width: 90vw;
+  margin: 3rem auto 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer ul {
+  display: flex;
+  list-style: none;
+}
+
+#footer li,
+#footer-copy {
+  padding-right: 1rem;
+  font-family: Recursive, sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+
+#footer a,
+#footer-copy {
+  color: #b3a577;
+  text-decoration: none;
+  position: relative;
+}
+
+#footer a:hover {
+  cursor: pointer;
+}
+
+#footer a::before,
+#footer a::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #b3a577;
+  transform: scaleX(0);
+  transition: transform 1s ease;
+}
+#footer a:hover::before,
+#footer a:hover::before {
+  transform: scaleX(1);
+}
