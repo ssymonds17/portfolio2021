@@ -72,3 +72,6 @@ contactLink.on('click', () => {
   $('#projects').hide();
   $('#contact').slideDown('slow');
 });
+
+// CONTACT FORM
+$('#contact-form').validate();

@@ -300,16 +300,17 @@
           Have an idea for a new project or interested in a collaboration? Drop
           me an email and I'll get back to you as soon as possible!
         </p>
-        <form action="" method="post" style="display: block;">
+        <form action="" method="post" id="contact-form">
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Name"
+            minlength="2"
             required
           /><br />
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
             placeholder="Email"
@@ -320,13 +321,14 @@
             id="subject"
             name="subject"
             placeholder="Subject"
+            minlength="5"
             required
           /><br />
           <textarea
             name="message"
             id="message"
             cols="30"
-            rows="10"
+            rows="6"
             placeholder="Message"
             required
           ></textarea
@@ -337,6 +339,7 @@
     </div>
     <script src="libs/font-awesome.js"></script>
     <script src="libs/jquery-min.js"></script>
+    <script src="libs/jquery.validate.min.js"></script>
     <script src="libs/script.js"></script>
   </body>
 </html>
